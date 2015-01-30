@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4a300cc2-3a36-4ea8-b8d4-459a56b7cdaf" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:40759/ServiceAereo.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceAereo.xsd" MetadataType="Schema" ID="ed2797f1-4121-4c0b-a7ce-a539d3db4abe" SourceId="1" SourceUrl="http://localhost:40759/ServiceAereo.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceAereo.wsdl" MetadataType="Wsdl" ID="77a591c6-6fcf-46ff-a4f3-a223abde7b8a" SourceId="1" SourceUrl="http://localhost:40759/ServiceAereo.svc?wsdl" />
+    <MetadataFile FileName="ServiceAereo1.xsd" MetadataType="Schema" ID="094ce799-3b86-4a15-a70a-afd69b57b9b9" SourceId="1" SourceUrl="http://localhost:40759/ServiceAereo.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceAereo.disco" MetadataType="Disco" ID="8d0def0b-47cd-455b-a25b-b62547283679" SourceId="1" SourceUrl="http://localhost:40759/ServiceAereo.svc?disco" />
+    <MetadataFile FileName="ServiceAereo2.xsd" MetadataType="Schema" ID="ef10d3a1-1c68-4a33-9c13-904ae1de114d" SourceId="1" SourceUrl="http://localhost:40759/ServiceAereo.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0dd1a548-b62a-431a-81b1-92c9fd226d08" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:37719/ServiceCorreio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceCorreio.xsd" MetadataType="Schema" ID="2cacf71a-c8ae-40f5-a185-52ac0ce1f7c2" SourceId="1" SourceUrl="http://localhost:37719/ServiceCorreio.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceCorreio1.xsd" MetadataType="Schema" ID="33732dc6-ecb7-4d5a-86e0-2ab8fe489464" SourceId="1" SourceUrl="http://localhost:37719/ServiceCorreio.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceCorreio.wsdl" MetadataType="Wsdl" ID="25fdc7cf-08fa-4095-b065-8fd28b8d91ce" SourceId="1" SourceUrl="http://localhost:37719/ServiceCorreio.svc?wsdl" />
+    <MetadataFile FileName="ServiceCorreio.disco" MetadataType="Disco" ID="6df802fc-c4c0-40c7-97fa-5b616729ddea" SourceId="1" SourceUrl="http://localhost:37719/ServiceCorreio.svc?disco" />
+    <MetadataFile FileName="ServiceCorreio2.xsd" MetadataType="Schema" ID="1fdbc330-693a-4c9c-bf12-ab8c9e3472ef" SourceId="1" SourceUrl="http://localhost:37719/ServiceCorreio.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

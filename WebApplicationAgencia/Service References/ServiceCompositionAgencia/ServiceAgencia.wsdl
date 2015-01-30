@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceAgencia" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:45856/ServiceAgencia.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:45856/ServiceAgencia.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:45856/ServiceAgencia.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServiceHotel" />
+      <xsd:import schemaLocation="http://localhost:45856/ServiceAgencia.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ServiceCorreio" />
+      <xsd:import schemaLocation="http://localhost:45856/ServiceAgencia.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/ServicoAereo" />
+      <xsd:import schemaLocation="http://localhost:45856/ServiceAgencia.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/ServicoTerrestre" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceAgencia_VerificarQuartos_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarQuartos" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAgencia_VerificarQuartos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarQuartosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAgencia_ReservarQuarto_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReservarQuarto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAgencia_ReservarQuarto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReservarQuartoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAgencia_ObterEndereco_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterEndereco" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAgencia_ObterEndereco_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterEnderecoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAgencia_VerificarPrecosAviao_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarPrecosAviao" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAgencia_VerificarPrecosAviao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarPrecosAviaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAgencia_ComprarPassagemAviao_InputMessage">
+    <wsdl:part name="parameters" element="tns:ComprarPassagemAviao" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAgencia_ComprarPassagemAviao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ComprarPassagemAviaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAgencia_VerificarPrecosOnibus_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarPrecosOnibus" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAgencia_VerificarPrecosOnibus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarPrecosOnibusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAgencia_ComprarPassagemOnibus_InputMessage">
+    <wsdl:part name="parameters" element="tns:ComprarPassagemOnibus" />
+  </wsdl:message>
+  <wsdl:message name="IServiceAgencia_ComprarPassagemOnibus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ComprarPassagemOnibusResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceAgencia">
+    <wsdl:operation name="VerificarQuartos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAgencia/VerificarQuartos" message="tns:IServiceAgencia_VerificarQuartos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAgencia/VerificarQuartosResponse" message="tns:IServiceAgencia_VerificarQuartos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReservarQuarto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAgencia/ReservarQuarto" message="tns:IServiceAgencia_ReservarQuarto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAgencia/ReservarQuartoResponse" message="tns:IServiceAgencia_ReservarQuarto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObterEndereco">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAgencia/ObterEndereco" message="tns:IServiceAgencia_ObterEndereco_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAgencia/ObterEnderecoResponse" message="tns:IServiceAgencia_ObterEndereco_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarPrecosAviao">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAgencia/VerificarPrecosAviao" message="tns:IServiceAgencia_VerificarPrecosAviao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAgencia/VerificarPrecosAviaoResponse" message="tns:IServiceAgencia_VerificarPrecosAviao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ComprarPassagemAviao">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAgencia/ComprarPassagemAviao" message="tns:IServiceAgencia_ComprarPassagemAviao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAgencia/ComprarPassagemAviaoResponse" message="tns:IServiceAgencia_ComprarPassagemAviao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarPrecosOnibus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAgencia/VerificarPrecosOnibus" message="tns:IServiceAgencia_VerificarPrecosOnibus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAgencia/VerificarPrecosOnibusResponse" message="tns:IServiceAgencia_VerificarPrecosOnibus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ComprarPassagemOnibus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceAgencia/ComprarPassagemOnibus" message="tns:IServiceAgencia_ComprarPassagemOnibus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceAgencia/ComprarPassagemOnibusResponse" message="tns:IServiceAgencia_ComprarPassagemOnibus_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceAgencia" type="tns:IServiceAgencia">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VerificarQuartos">
+      <soap:operation soapAction="http://tempuri.org/IServiceAgencia/VerificarQuartos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReservarQuarto">
+      <soap:operation soapAction="http://tempuri.org/IServiceAgencia/ReservarQuarto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObterEndereco">
+      <soap:operation soapAction="http://tempuri.org/IServiceAgencia/ObterEndereco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarPrecosAviao">
+      <soap:operation soapAction="http://tempuri.org/IServiceAgencia/VerificarPrecosAviao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ComprarPassagemAviao">
+      <soap:operation soapAction="http://tempuri.org/IServiceAgencia/ComprarPassagemAviao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarPrecosOnibus">
+      <soap:operation soapAction="http://tempuri.org/IServiceAgencia/VerificarPrecosOnibus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ComprarPassagemOnibus">
+      <soap:operation soapAction="http://tempuri.org/IServiceAgencia/ComprarPassagemOnibus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceAgencia">
+    <wsdl:port name="BasicHttpBinding_IServiceAgencia" binding="tns:BasicHttpBinding_IServiceAgencia">
+      <soap:address location="http://localhost:45856/ServiceAgencia.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

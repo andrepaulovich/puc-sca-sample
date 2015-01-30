@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ServicoTerrestre" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServicoTerrestre" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="InformacaoOnibusVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Assentos" nillable="true" type="tns:ArrayOfAssentoOnibusVO" />
+      <xs:element minOccurs="0" name="CodigoCidadeDestino" type="xs:int" />
+      <xs:element minOccurs="0" name="CodigoCidadeOrigem" type="xs:int" />
+      <xs:element minOccurs="0" name="Data" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InformacaoOnibusVO" nillable="true" type="tns:InformacaoOnibusVO" />
+  <xs:complexType name="ArrayOfAssentoOnibusVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AssentoOnibusVO" nillable="true" type="tns:AssentoOnibusVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAssentoOnibusVO" nillable="true" type="tns:ArrayOfAssentoOnibusVO" />
+  <xs:complexType name="AssentoOnibusVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Livre" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Numero" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AssentoOnibusVO" nillable="true" type="tns:AssentoOnibusVO" />
+  <xs:complexType name="ReservaOnibusVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Assento" type="xs:int" />
+      <xs:element minOccurs="0" name="CodigoCidadeDestino" type="xs:int" />
+      <xs:element minOccurs="0" name="CodigoCidadeOrigem" type="xs:int" />
+      <xs:element minOccurs="0" name="Data" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReservaOnibusVO" nillable="true" type="tns:ReservaOnibusVO" />
+</xs:schema>
